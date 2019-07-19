@@ -1,14 +1,75 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
+  <ion-toolbar color="warning">
+    <ion-title >
+   court_couter
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+     
+  <table>
+    <tr>
+     <th> Team A</th> 
+     <th> Team B</th>
+    </tr><br><br>
+    <tr>
+        <th><label style="size:100px">{{TEAM_A}}</label></th>
+        <th>{{TEAM_B}}</th>
+
+    </tr>
+    
+    <tr>
+      <td class="vl">
+        <ion-grid>
+          <ion-row >
+              <ion-button (click)="display1()" color="warning">-4</ion-button><br>
+              <ion-button (click)="display2()"color="warning">4</ion-button>
+            </ion-row>
+              <ion-row>
+              <ion-button (click)="display3()" color="warning">-3</ion-button>
+              <ion-button (click)="display4()" color="warning">3</ion-button>
+            </ion-row>
+          </ion-grid>
+           <ion-grid>
+          <ion-row>
+              <ion-button (click)="display5()" color="warning">-2</ion-button>
+              <ion-button (click)="display6()" color="warning">2</ion-button>
+            </ion-row>
+          </ion-grid>
+          <ion-grid>
+              <ion-row>
+              <ion-button (click)="display7()" color="warning">-1</ion-button>
+              <ion-button (click)="display8()" color="warning">1</ion-button>
+            </ion-row>
+          </ion-grid>
+      </td>
+      <td>
+        <ion-grid>
+          <ion-row>
+              <ion-button (click)="display9()" color="warning">-4</ion-button>
+              <ion-button (click)="display10()"color="warning">4</ion-button>
+            </ion-row>
+              <ion-row>
+              <ion-button (click)="display11()" color="warning">-3</ion-button>
+              <ion-button (click)="display12()" color="warning">3</ion-button>
+            </ion-row>
+          </ion-grid>
+           <ion-grid>
+          <ion-row>
+              <ion-button (click)="display13()" color="warning">-2</ion-button>
+              <ion-button (click)="display14()" color="warning">2</ion-button>
+            </ion-row>
+              <ion-row>
+              <ion-button (click)="display15()" color="warning">-1</ion-button>
+              <ion-button (click)="display16()" color="warning">1</ion-button>
+            </ion-row>
+          </ion-grid>
+      </td>
+
+    </tr>
+  </table>
+  <div class="button">
+  <ion-button color="warning" (click)="Reset()">Reset</ion-button>
   </div>
 </ion-content>

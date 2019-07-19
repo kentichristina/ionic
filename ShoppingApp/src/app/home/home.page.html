@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <div class="ion-padding">
+    <ion-input>name:</ion-input>
+    <ion-button (click)="submit()">submit</ion-button>
+  </div> -->
+
+  <ion-item  *ngFor="let grocery of grocerylist|async">
+    {{grocery.name}}
+    {{grocery.price}}
+
+  </ion-item>
+</ion-content>
+
